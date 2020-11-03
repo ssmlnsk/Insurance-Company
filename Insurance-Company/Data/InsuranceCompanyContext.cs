@@ -30,8 +30,8 @@ namespace Insurance_Company.Data
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 // optionsBuilder.UseSqlite("Data Source=D:\\Учёба\\2 курс\\ОПБД\\БД Страховая компания\\Insurance-Company.db");
-                optionsBuilder.UseSqlServer("Data Source=SSMLNSK;Initial Catalog=Insurance-Company;Integrated Security=True");
-                //optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Insurance-Company;Integrated Security=True");
+                //optionsBuilder.UseSqlServer("Data Source=SSMLNSK;Initial Catalog=Insurance-Company;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Insurance-Company;Integrated Security=True");
             }
         }
 
