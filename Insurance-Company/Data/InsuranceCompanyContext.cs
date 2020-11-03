@@ -29,8 +29,9 @@ namespace Insurance_Company.Data
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                //   optionsBuilder.UseSqlite("Data Source=D:\\Учёба\\2 курс\\ОПБД\\БД Страховая компания\\Insurance-Company.db");
+                // optionsBuilder.UseSqlite("Data Source=D:\\Учёба\\2 курс\\ОПБД\\БД Страховая компания\\Insurance-Company.db");
                 optionsBuilder.UseSqlServer("Data Source=SSMLNSK;Initial Catalog=Insurance-Company;Integrated Security=True");
+                //optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Insurance-Company;Integrated Security=True");
             }
         }
 
@@ -97,7 +98,7 @@ namespace Insurance_Company.Data
                 entity.Property(e => e.DataRozhdeniya)
                     .IsRequired()
                     .HasColumnName("Data_rozhdeniya")
-                    .HasColumnType("DATATIME");
+                    .HasColumnType("DATETIME");
 
                 entity.Property(e => e.Fio)
                     .IsRequired()
@@ -139,12 +140,12 @@ namespace Insurance_Company.Data
                 entity.Property(e => e.DataNachala)
                     .IsRequired()
                     .HasColumnName("Data_nachala")
-                    .HasColumnType("DATATIME");
+                    .HasColumnType("DATETIME");
 
                 entity.Property(e => e.DataOkonchaniya)
                     .IsRequired()
                     .HasColumnName("Data_okonchaniya")
-                    .HasColumnType("DATATIME");
+                    .HasColumnType("DATETIME");
 
                 entity.Property(e => e.KodKlienta)
                     .HasColumnName("Kod_klienta")
@@ -228,7 +229,7 @@ namespace Insurance_Company.Data
                 entity.Property(e => e.DataRozdeniya)
                     .IsRequired()
                     .HasColumnName("Data_rozdeniya")
-                    .HasColumnType("DATATIME");
+                    .HasColumnType("DATETIME");
 
                 entity.Property(e => e.Fio)
                     .IsRequired()
